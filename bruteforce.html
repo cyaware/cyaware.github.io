@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Attack Simulation</title>
+    <link rel="stylesheet" href="bruteforce.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Brute Force Attack Simulation</h1>
+        <p>Understand why strong passwords are important. Simulate a brute-force attack to see how easily simple passwords can be cracked.</p>
+        <div class="password-container">
+            <input type="password" id="targetPassword" placeholder="Enter your password">
+            <span id="togglePassword" class="eye-icon">👁️</span>
+        </div>
+        
+        <button id="startButton">Start Simulation</button>
+        <div id="passwordTip" class="password-tip"></div>
+        <div class="output" id="output"></div>
+        <div class="info">
+            <h2>Why Complex Passwords Matters</h2>
+            <p>Weak passwords with fewer characters or simple patterns are easier for attackers to guess. Use a combination of:</p>
+            <ul>
+                <li>Uppercase and lowercase letters</li>
+                <li>Numbers</li>
+                <li>Special characters</li>
+                <li>At least 12 characters</li>
+            </ul>
+            <p><strong>Example:</strong> Instead of "password123", use "P@ssw0rd!23$".</p>
+        </div>
+    </div>
+    <script src="bruteforce.js"></script>
+</body>
+</html>

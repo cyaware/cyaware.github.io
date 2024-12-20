@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Simulation</title>
+    <link rel="stylesheet" href="phishing.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulated Inbox</h1>
+            <p>Cybersecurity Awareness Training</p>
+            <div id="score">Awareness Level: 0</div>
+        </header>
+        
+        <section class="email-list">
+            <!-- Example Email -->
+            <div class="email-item" onclick="openEmail('deceptive-phishing')">
+                <p><strong>Verify Your Account</strong> - from: admin@fakesite.com</p>
+            </div>
+        </section>
+        
+        <div id="email-content" class="email-content"></div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+    
+    <script src="phishing.js"></script>
+</body>
+</html>

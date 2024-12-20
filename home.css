@@ -1,0 +1,244 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: url('img/k.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.iEWApX {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 500;
+    max-height: 80px;
+    background-color:rgba(0, 0, 0, 0.2); /* Add a background color */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Additional Styling for header */
+  .StackedNavigationHeader-iAMZwH {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Example styling for navigation links */
+  .StackedNavigationSectionPrimaryLinks-foRfJu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .StackedNavigationSectionPrimaryLinks-foRfJu ul li a {
+    text-decoration: none;
+    color:white;
+  }
+
+  /* General body and html style */
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Optional Style for Menu Button */
+  .button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #005bb5;
+  }
+
+
+/* Menu icon styling */
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Sidebar menu styling */
+#sidebar {
+    display: none;
+    background-color: none;
+    width: 200px;
+    position: absolute;
+    top: calc(120px); /* Adjust according to title height */
+    left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    margin-left: 10px; /* Adjust for more space on the left */
+    border-bottom: 1px solid #444;
+}
+
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main content */
+/* Main content */
+.main-content {
+    width: calc(60% - 220px);
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    max-height: 520px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* For modern browsers to reduce scrollbar width */
+    scrollbar-color: #ccc transparent; /* Customize scrollbar color */
+}
+
+/* Optional: For a better-looking scrollbar (for webkit browsers like Chrome and Safari) */
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: transparent();
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.module {
+    background-color:  rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.module1 {
+    background-color: rgba(34, 188, 173, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.module h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #81b7f0;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.plus {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.module-content {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: none;
+}
+
+/* Styling <a> as buttons */
+.module-content a {
+    display: block; /* Makes the entire <a> element clickable */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: rgba(34, 188, 173, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.module-content a:hover {
+    background-color: rgba(34, 188, 173, 1);
+    text-decoration: none;
+}
+
+/* Leaderboard */
+.leaderboard {
+    width: 16%;  /* Adjust if it's too wide */
+    background-color: none;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+
+.leaderboard h2 {
+    text-align: center;
+    color: white;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard ul li {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .leaderboard {
+        width: 100%;
+        position: relative;
+        top: auto;
+    }
+
+    #sidebar {
+        width: 100%; /* Sidebar takes full width on small screens */
+    }
+}

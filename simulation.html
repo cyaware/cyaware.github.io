@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Simulation</title>
+    <link rel="stylesheet" href="simulation.css">
+    <script src="simulation.js" defer></script>
+</head>
+<body>
+    <div class="simulation-container">
+        <h1>Simulated Email Inbox</h1>
+        <div class="email-list">
+            <div class="email" onclick="openEmail(1)">
+                <span class="sender">Banking Alerts</span>
+                <span class="subject">Urgent: Verify Your Account</span>
+                <span class="time">2 hours ago</span>
+            </div>
+            <div class="email" onclick="openEmail(2)">
+                <span class="sender">Social Media Team</span>
+                <span class="subject">Update Your Password Now</span>
+                <span class="time">1 day ago</span>
+            </div>
+            <div class="email" onclick="openEmail(3)">
+                <span class="sender">Online Store</span>
+                <span class="subject">You’ve Won a Gift Card!</span>
+                <span class="time">3 days ago</span>
+            </div>
+        </div>
+        <div id="email-content" class="hidden">
+            <h2>Email Content</h2>
+            <p id="content-text"></p>
+            <button id="visit-link" class="hidden" onclick="visitPhishingLink()">Visit Link</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/quiz.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.iEWApX {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 500;
+    max-height: 80px;
+    background-color:rgba(0, 0, 0, 0.2); /* Add a background color */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Additional Styling for header */
+  .StackedNavigationHeader-iAMZwH {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+
+  /* Example styling for navigation links */
+  .StackedNavigationSectionPrimaryLinks-foRfJu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .StackedNavigationSectionPrimaryLinks-foRfJu ul li a {
+    text-decoration: none;
+    color:white;
+  }
+
+  /* General body and html style */
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Optional Style for Menu Button */
+  .button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #005bb5;
+  }
+
+
+/* Menu icon styling */
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Sidebar menu styling */
+#sidebar {
+    display: none;
+    background-color: none;
+    width: 200px;
+    position: absolute;
+    top: calc(120px); /* Adjust according to title height */
+    left: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    margin-left: 10px; /* Adjust for more space on the left */
+    border-bottom: 1px solid #444;
+}
+
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+
+.quiz-container {
+    max-width: 800px;
+    max-height: 1200px;
+    margin: 140px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option.correct {
+    background: #28a745 !important;
+    cursor: default;
+}
+
+.option.wrong {
+    background: #dc3545 !important;
+    cursor: default;
+}
+
+.option:disabled {
+    cursor: default;
+}
+
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
